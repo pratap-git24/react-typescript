@@ -1,10 +1,14 @@
 import React from "react";
 import './style.css'
 
-const TodoItem:React.FC = () =>{
+interface title{
+    title:string
+}
+
+const TodoItem:React.FC<title> = (props) =>{
     return (        
         <li>
-            Item 1
+           {props.title}
         </li>        
     )
 };
