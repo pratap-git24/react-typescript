@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css'
 import Todo from './components/Todo';
-
+import Counter from './components/Counter';
 const allTodoItems = [
   {
     name:"Pratap",
@@ -17,6 +17,7 @@ const App : React.FC = () =>{
     <div>
         <h1>React Typescript</h1>
         <Todo lists={allTodoItems}/>
+        <Counter/>
     </div>
   );
 };
